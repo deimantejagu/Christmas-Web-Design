@@ -45,6 +45,8 @@ var people = [
     }
 ];
 
+console.log("git test");
+
 var currentIteration = 0;
 var nextButton = document.getElementById("nextBtn");
 var prevButton = document.getElementById("prevBtn");
