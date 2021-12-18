@@ -1,0 +1,47 @@
+body{
+    background-color:black;
+    color: white;
+}
+
+.background{
+    background: url(../img/back.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+hr{
+    border-top: 1px solid white;
+}
+
+.navBtns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nextBtn, #prevBtn{
+    display: block;
+    color: #fff;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    padding: 10px 50px;
+    border: 1px solid #fff;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nameSurename{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+h1{
+    display: inline-block;
+    margin-right: 20px;
+}
