@@ -58,6 +58,18 @@ function updateList() {
   dataItems.forEach(function(item) {
     document.getElementById(item.id).innerHTML = people[currentIteration][item.id];
 
+    if(currentIteration == (people.length - 1)){
+      nextButton.style.visibility = 'hidden';
+    } else {
+      nextButton.style.visibility = 'visible';
+    }
+
+    if(currentIteration == 0){
+      prevButton.style.visibility = 'hidden';
+    } else {
+      prevButton.style.visibility = 'visible';
+    }
+
     if(item.id == "email") {
       document.getElementById(item.id).href = "mailto:" + people[currentIteration][item.id];
     }

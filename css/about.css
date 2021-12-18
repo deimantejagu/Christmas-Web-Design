@@ -33,6 +33,12 @@ hr{
     border: 1px solid #fff;
     display: inline-block;
     margin-right: 20px;
+    cursor: pointer;
+
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */ 
 }
 
 .nameSurename{
