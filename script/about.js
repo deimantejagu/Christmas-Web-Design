@@ -3,10 +3,9 @@ var people = [
     "name": "Linas",
     "surename": "Malocas",
     "year": "2003-05-12",
-    "gift1": "Masina",
-    "gift2": "Vienaragis",
-    "gift3": "Sauna",
-    "gift4": "Saldainiai",
+    gifts: [
+      "Masina"
+    ],
     "PhoneNumber": "+37064512265",
     "email": "labas@gmail.com",
   },
@@ -14,10 +13,10 @@ var people = [
     "name": "Saulius",
     "surename": "Calocas",
     "year": "1998-12-25",
-    "gift1": "Namas",
-    "gift2": "Kaliause",
-    "gift3": "Dinozauras",
-    "gift4": "Zasilines kopecios",
+    gifts: [
+      "Masina", 
+      "Vienaragis"
+    ],
     "PhoneNumber": "+37000000000",
     "email": "vakaras@gmail.com",
   },
@@ -25,10 +24,11 @@ var people = [
     "name": "Dalius",
     "surename": "Kalibis",
     "year": "2013-01-30",
-    "gift1": "Supynes",
-    "gift2": "Tigru zaislu rinkinys",
-    "gift3": "Kompiuteris",
-    "gift4": "Rieduciai",
+    gifts: [
+      "Masina", 
+      "Vienaragis", 
+      "Sauna"
+    ],
     "PhoneNumber": "+370458755562",
     "email": "liudas@gmail.com",
   },
@@ -36,10 +36,24 @@ var people = [
     "name": "Monika",
     "surename": "Armonika",
     "year": "2020-10-08",
-    "gift1": "Telefonas",
-    "gift2": "Ausines",
-    "gift3": "PLansete",
-    "gift4": "Suniukas",
+    gifts: [
+      "Masina",
+      "Vienaragis",
+      "Sauna",
+      "Saldainiai",
+      "Masina",
+      "Vienaragis",
+      "Sauna",
+      "Saldainiai",
+      "Masina",
+      "Vienaragis",
+      "Sauna",
+      "Saldainiai",
+      "Masina",
+      "Vienaragis",
+      "Sauna",
+      "Saldainiai"
+    ],
     "PhoneNumber": "+37084566658",
     "email": "babuska@gmail.com",
   }
@@ -56,7 +70,14 @@ initialiseButtonsLogic();
 //Functions START HERE
 function updateList() {
   dataItems.forEach(function(item) {
-    document.getElementById(item.id).innerHTML = people[currentIteration][item.id];
+    if (item.id == "gifts") {
+      document.getElementById(item.id).innerHTML = people[currentIteration][
+        item.id
+      ].join("<br/>");
+    } else {
+      document.getElementById(item.id).innerHTML =
+        people[currentIteration][item.id];
+    }
 
     if(currentIteration == (people.length - 1)){
       nextButton.style.visibility = 'hidden';
