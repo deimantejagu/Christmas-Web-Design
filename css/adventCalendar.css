@@ -3,13 +3,13 @@ body {
 }
 
 #calendar .day {
+    position: relative;
     height: 200px;
     border: 1px solid;
     transition: .5s ease-in-out;
     color: #fff;
     font-weight: bold;
-    font-size: 30px;
-    position: relative;
+    font-size: 2em;
     z-index: 2;
 }
 
@@ -18,13 +18,13 @@ body {
 }
 
 #calendar {
+    position: relative;
     display: grid;
     grid-column-gap: 10px;
     grid-row-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     max-width: 1000px;
     margin: 100px auto;
-    position: relative;
 }
 
 img.decoration {
@@ -44,8 +44,8 @@ img.decoration {
 #calendar .day p.date {
     position: absolute;
     transition: .5s ease-in-out;
-    top: 8px;
-    right: 16px;
+    bottom: 0px;
+    left: 16px;
 }
 
 button{
