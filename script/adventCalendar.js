@@ -8,7 +8,7 @@ $(document).ready(function() {
         $("#active .house").css("display", "none");
         $("#active .santa").css("display", "none");
         //Cia C kalbos kode yra priskiriamas paveiksliukas//
-        $("#active").css("background", "url(../img/24.jpg) center center");
+        $("#active").css("background", "url(../img/18.jpg) center center");
         $("#active").css("background-size", "cover");
         $("#button").css("display", "none");
         $("#button2").css("display", "block");
@@ -23,7 +23,7 @@ $(document).ready(function() {
         $(".decoration").css("filter", "blur(0px)");
         $("#active .house").css("display", "block");
         $("#active .santa").css("display", "block");
-        $("#active").css("background", "#000000");
+        $("#active").css("background", "#0000");
         $("#button").css("display", "block");
         $("#button2").css("display", "none");
     });
